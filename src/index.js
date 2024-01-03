@@ -9,6 +9,8 @@ import {
 } from "react-router-dom";
 import Home from "./routes/Home"
 import Contact from "./routes/Contact"
+import BeeBeauties from "./routes/Beebeauties"
+import Blog from "./routes/Blog"
 import Navbar from "./components/Navbar";
 
 const AppLayout = () => {
@@ -31,6 +33,14 @@ const router = createBrowserRouter([
             {
                 path: "contact",
                 element: <Contact />,
+            },
+            {
+                path: "blog",
+                element: <Blog />,
+            },
+            {
+                path: "beebeauties",
+                element: <BeeBeauties />,
             },
         ],
     },

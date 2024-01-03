@@ -17,17 +17,43 @@ function Navbar() {
 
   return (
     <>
-    <nav className='navbar'>
-        <div className='navbar-container container'>
-            <Link to="/" className="navbar-logo" >
-                <img src={beebeautyLogo} alt='logo' width={200} onClick={closeMobileMenu}/>
-                <p>Given you the confidence to wear your skin</p>
-            </Link>
-            <div className="menu-icon" onClick={handleClick}>
-                {click ? <FaTimes /> : <FaBars />}
+    <IconContext.Provider value={{color: "fff"}}>
+        <nav className='navbar'>
+            <div className='navbar-container container'>
+                <div className="logo">
+                    <Link to="/" className="navbar-logo" >
+                        <img src={beebeautyLogo} alt='logo' width={150} onClick={closeMobileMenu}/>
+                        <p>Given you the confidence to wear your skin</p>
+                    </Link>
+                </div>
+                <div className="menu-icon" onClick={handleClick}>
+                    {click ? <FaTimes style={{color: 'black'}} /> : <FaBars style={{color: 'black'}} />}
+                </div>
+                <ul className={click ? "nav-menu active" : "nav-menu"}>
+                    <li className="nav-item">
+                        <NavLink to="/" className={({ isActive }) => "nav-links" + (isActive ? " activated" : "")} onClick={closeMobileMenu}>
+                            Home
+                        </NavLink>
+                    </li>
+                    <li className="nav-item">
+                        <NavLink to="/beebeauties" className={({ isActive }) => "nav-links" + (isActive ? " activated" : "")} onClick={closeMobileMenu}>
+                            BeeBeauties
+                        </NavLink>
+                    </li>
+                    <li className="nav-item">
+                        <NavLink to="/blog" className={({ isActive }) => "nav-links" + (isActive ? " activated" : "")} onClick={closeMobileMenu}>
+                            Blog
+                        </NavLink>
+                    </li>
+                    <li className="nav-item">
+                        <NavLink to="/contact" className={({ isActive }) => "nav-links" + (isActive ? " activated" : "")} onClick={closeMobileMenu}>
+                            Contact
+                        </NavLink>
+                    </li>
+                </ul>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </IconContext.Provider>
     </>
   )
 }
