@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+.home {
+    margin: 55px 55px;
+}
+
+.aboutus {
+    display: flex;
+    gap: 50px;
+}
+
+.allproductimage img {
+    width: 500px;
+    border-radius: 10px;
+}
+
+.btn {
+    padding: 10px 15px;
+    background-color: white;
+    border: 1px solid green;
+    border-radius: 3px;
+}
