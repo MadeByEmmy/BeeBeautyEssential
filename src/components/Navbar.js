@@ -23,7 +23,7 @@ function Navbar() {
                 <div className="logo">
                     <Link to="/" className="navbar-logo" >
                         <img src={beebeautyLogo} alt='logo' width={150} onClick={closeMobileMenu}/>
-                        <p>Given you the confidence to wear your skin</p>
+                        <p>Giving you the confidence to wear your skin you like</p>
                     </Link>
                 </div>
                 <div className="menu-icon" onClick={handleClick}>
