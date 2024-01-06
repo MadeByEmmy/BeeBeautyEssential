@@ -1,14 +1,29 @@
 .homepage {
     margin: 20px 55px;
+    box-sizing: border-box;
+}
+
+.button {
+    padding: 5px 15px;
+    border: 1px solid green;
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+.button:hover,
+.button:focus {
+    transform: scale(0.90);
 }
 
 .aboutus {
     display: flex;
     gap: 50px;
+    border: 3px solid green;
 }
 
 .aboutus-desp {
     margin-top: 100px;
+    border: 3px solid green;
 }
 
 .aboutus-desp p {
@@ -17,7 +32,43 @@
 
 .hero-block {
     width: 500px;
+    border: 3px solid green;
 }
 .productimage {
     width: 500px;
+}
+
+.ceoimage-desp {
+    border: 3px solid green;
+    background-color: #e9b2b7;
+    margin-top: 20px;
+}
+
+.ceoimage-desp img {
+    width: 400px;
+}
+
+.inspirationalquotes img {
+    width: 60px;
+    padding-left: 20px;
+}
+
+.inspirdesp {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    width: 50%;
+    margin-top: -50px;
+    margin-left: 500px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: -1px 0px 10px 9px rgba(0,0,0,0.25);
+    -webkit-box-shadow: -1px 0px 10px 9px rgba(0,0,0,0.25);
+    -moz-box-shadow: -1px 0px 10px 9px rgba(0,0,0,0.25);;
+}
+
+.inspirdesp p {
+    border-right: 1px solid green;
+    padding: 0 5px;
 }
