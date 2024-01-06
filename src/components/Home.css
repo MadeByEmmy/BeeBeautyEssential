@@ -1,9 +1,23 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+.homepage {
+    margin: 20px 55px;
+}
 
-.home {
-    margin: 55px 55px;
+.aboutus {
+    display: flex;
+    gap: 50px;
+}
+
+.aboutus-desp {
+    margin-top: 100px;
+}
+
+.aboutus-desp p {
+    text-align: justify;
+}
+
+.hero-block {
+    width: 500px;
+}
+.productimage {
+    width: 500px;
 }
