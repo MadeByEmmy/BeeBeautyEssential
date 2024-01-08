@@ -46,6 +46,13 @@
     padding-left: 20px;
 }
 
+.bestseller {
+    border: 3px solid green;
+    margin: 20px 55px;
+    display: flex;
+    gap: 30px;
+}
+
 .inspirdesp {
     display: flex;
     flex-direction: row;
@@ -71,10 +78,14 @@
 }
 
 .slide {
-    margin: 30px 0;
+    margin: 10px 0 30px 0;
     padding: 10px;
     border: 2px solid #c2f5cc;
     border-radius: 5px;
+}
+
+.testimonial-header {
+    margin-bottom: 0;
 }
 
 .testimonial-desp {
@@ -94,7 +105,7 @@
 .review-name {
     margin-top: 20px;
     font-weight: 700;
-    font-size: larger;
+    font-size: medium;
 }
 
 

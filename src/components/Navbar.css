@@ -5,13 +5,17 @@
   }
   
   .navbar {
-    padding-bottom: 60px;
+    padding-bottom: 30px;
     margin: 10px 0;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
+    position: sticky;
+    top: 0;
     border-bottom: 3px solid #c2f5cc;
+    border-top: 3px solid #c2f5cc;
+    background-color: #f8f8f8;
   }
   
   .navbar-container {
@@ -91,7 +95,10 @@
     .NavbarItems {
       position: relative;
     }
-  
+    .navbar {
+      position: sticky;
+      top: 0;
+    }
     .nav-menu {
       display: flex;
       flex-direction: column;

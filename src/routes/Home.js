@@ -4,6 +4,7 @@ import ceoimage from "../assets/7.jpg"
 import inspired from "../assets/8.jpg"
 import sourced from "../assets/9.jpg"
 import backed from "../assets/10.jpg"
+import bestseller from "../assets/1.jpg"
 import { Link } from 'react-router-dom';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -54,14 +55,14 @@ const data = [
   },
   {
     id: 2,
-    username: "Queen O.",
-    testimonial: "My husband and I have used the products for a while now, it makes our skin feel smooth no matter the weather. I would definitely recommend to anyone looking to feel and smell good 😎",
+    username: "Tomiloloa O.",
+    testimonial: "Absolutely lovely and effective products. The packaging is also top notch, it's so much bigger than it looks in the pictures. Great value for money. I use the Black soap for my 4 year old too and Hubby uses the liquid black soap too. Absolutely recommend!",
     star: <FaStar />
   },
   {
     id: 3,
-    username: "Tomiloloa O.",
-    testimonial: "Absolutely lovely and effective products. The packaging is also top notch, it's so much bigger than it looks in the pictures. Great value for money. I use the Black soap for my 4 year old too and Hubby uses the liquid black soap too. Absolutely recommend!",
+    username: "Queen O.",
+    testimonial: "My husband and I have used the products for a while now, it makes our skin feel smooth no matter the weather. I would definitely recommend to anyone looking to feel and smell good 😎",
     star: <FaStar />
   },
   {
@@ -73,18 +74,8 @@ const data = [
 ]
 
 function AppHero() {
+  //styling the stars
   const style = { color: "gold" }
-   // Create array with 1000 slides
-  const slides = Array.from({ length: 1000 }).map(
-    (el, index) => `Slide ${index + 1}`
-  );
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1
-  };
   return (
     <>
       <div className='homepage'>
@@ -115,17 +106,46 @@ function AppHero() {
               <p>BACKED BY SCIENCE</p>
           </div>
       </div>
+      <div className="bestseller">
+        <div>
+        <h3>Our Best Seller</h3>
+        <p>Transform your beauty routine into a masterpiece with our latest cosmetic sensation! 🌟 Unveil the magic of radiant hues, flawless finishes, and a touch of glamour. Elevate your look with a dash of luxury and a sprinkle of confidence. Unleash your inner glow and let your beauty shine, because you're not just using cosmetics – you're creating a masterpiece. Indulge in the extraordinary, embrace your allure!"</p>
+        </div>
+        <div className="best-seller-pro">
+          <img src={bestseller} width={300}/>
+        </div>
+        <div className="subsciption">
+          
+        </div>
+      </div>
       <div className="swipercontainer">
-        <h1>What People Say About Us</h1>
+        <h1 className="testimonial-header">What People Say About Us</h1>
         <Swiper
-          modules={[Autoplay,Pagination, A11y]}
+          modules={[Autoplay, Pagination, A11y]}
           autoplay={{
             delay: 5000,
             disableOnInteraction: false,
           }}
+          breakpoints={{
+            200:{
+              slidesPerView:1,
+            },
+            320:{
+                slidesPerView:1,
+            },
+            767:{
+                slidesPerView:2,
+            },
+            600:{
+                slidesPerView:3,
+            },
+            1000:{
+                slidesPerView:3
+            }
+          }}
           pagination={{ clickable: true}}
           spaceBetween={20}
-          slidesPerView={2}
+          slidesPerView={3}
           onSwiper={(swiper) => console.log(swiper)}
           onSlideChange={() => console.log('slide change')}
         >
