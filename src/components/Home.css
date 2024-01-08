@@ -30,13 +30,6 @@
     text-align: justify;
 }
 
-.hero-block {
-    width: 500px;
-    border: 3px solid green;
-}
-.productimage {
-    width: 500px;
-}
 
 .ceoimage-desp {
     border: 3px solid green;
@@ -72,3 +65,36 @@
     border-right: 1px solid green;
     padding: 0 5px;
 }
+
+.swipercontainer {
+    margin: 20px 55px;
+}
+
+.slide {
+    margin: 30px 0;
+    padding: 10px;
+    border: 2px solid #c2f5cc;
+    border-radius: 5px;
+}
+
+.testimonial-desp {
+    text-align: justify;
+}
+
+.quoteleft {
+    margin-right: 10px;
+    font-size: 15px;
+}
+
+.quoteright {
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.review-name {
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: larger;
+}
+
+
