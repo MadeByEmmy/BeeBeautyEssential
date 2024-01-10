@@ -7,7 +7,7 @@ import inspired from "../assets/8.jpg"
 import sourced from "../assets/9.jpg"
 import backed from "../assets/10.jpg"
 import bestseller from "../assets/result.png"
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay,A11y,Pagination} from 'swiper/modules';
@@ -16,9 +16,9 @@ import 'swiper/css';
 // import Swiper core and required modules
 import 'swiper/css/pagination';
 
-import { FaStar } from "react-icons/fa";
-import { FaQuoteLeft } from "react-icons/fa6";
-import { FaQuoteRight } from "react-icons/fa6";
+import { FaStar, FaPhoneSquareAlt, FaEnvelopeOpenText, FaInstagramSquare, FaFacebookSquare  } from "react-icons/fa";
+import { FaQuoteLeft, FaQuoteRight, FaSquareXTwitter } from "react-icons/fa6";
+
 
 
   const heroData = [
@@ -78,6 +78,14 @@ const data = [
 function AppHero() {
   //styling the stars
   const style = { color: "gold" }
+  //facebook Profile Page
+  const facebookProfile = 'https://m.facebook.com/beebeautyessentials/';
+  //Instagram Profile Page
+  const instagramProfile = 'https://www.instagram.com/beebeautyessentials/';
+  //facebook Profile Page
+  const twitterProfile = 'https://www.instagram.com/beebeautyessentials/';
+  //Email Address
+  const emailAddress = 'mailto:beebeautyessentials@gmail.com';
   //Subcription form
   const form = useRef()
 
@@ -189,6 +197,101 @@ function AppHero() {
           ))}
         </Swiper>
       </div>
+      <footer className="footer">
+          <div className="footer-form">
+            <h3>Let’s Connect</h3>
+            <p>Hi! Sign up for our newsletter and be the first to know about exclusive offers, heads up on new product updates and launches, pop-ups events of BeeBeauty Essentials, juicy discounts and more. </p>
+            <form ref={form} onSubmit={sendEmail}className="subscription-main-form-footer">
+                <input type="text" placeholder="Full Name" name="name" className="input_name" required />
+                <input type="email" placeholder="Email Address" name="email" className="input_email" required />
+                <button type="submit" className="submit-btn-footer">Subscribe</button>
+            </form>
+          </div>
+          <nav className="footer-nav">
+            <div>
+              <h3>Shop</h3>
+              <ul>
+                <li>
+                  <Link to="./#">
+                  Shop All
+                  </Link>
+                </li>
+                <li>
+                  <Link to="./#">
+                  Hair Care
+                  </Link>
+                </li>
+                <li>
+                  <Link to="./#">
+                  Body Care
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3>About Us</h3>
+              <ul>
+                <li>
+                  <Link to="./#">
+                  About The Brand
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3>FAQ</h3>
+              <ul>
+                <li>
+                  <Link to="./Blog">
+                  Blog
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3>FAQ</h3>
+              <ul>
+                <li>
+                  <Link to="./Blog">
+                  Blog
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3>Customer Support</h3>
+              <ul>
+                <li>
+                  <FaPhoneSquareAlt />  +234 802 222 5861
+                </li>
+                <li>
+                <a href={emailAddress}>
+                  <FaEnvelopeOpenText />  beebeautyessentials@gmail.com
+                </a>
+                </li>
+              </ul>
+              <div className="nav-icons">
+                <ul>
+                  <li>
+                    <a href={facebookProfile}>
+                    <FaFacebookSquare />
+                    </a>
+                  </li>
+                  <li>
+                    <a href={instagramProfile}>
+                    <FaInstagramSquare />
+                    </a>
+                  </li>
+                  <li>
+                    <a href={twitterProfile}>
+                    <FaSquareXTwitter />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+      </footer>
     </>
   );
 }
