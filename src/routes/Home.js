@@ -7,7 +7,7 @@ import inspired from "../assets/8.jpg"
 import sourced from "../assets/9.jpg"
 import backed from "../assets/10.jpg"
 import bestseller from "../assets/result.png"
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay,A11y,Pagination} from 'swiper/modules';
@@ -104,7 +104,7 @@ function AppHero() {
   };
   
   return (
-    <>
+    <div className="mainpage">
       <div className='homepage'>
         <div className='aboutus'>
             <div className='aboutus-desp'>
@@ -119,8 +119,13 @@ function AppHero() {
               
             </div>
         </div>
-        <div className='ceoimage-desp'>
-          <img src={ceoimage} />
+        <div className="ceo-writeup">
+          <div className='ceoimage-desp'>
+            <img src={ceoimage} />
+          </div>
+          <div>
+            <p>BeeBeauty Essentials is a fully African beauty and health focused brand creating a range of essentials for your skin and hair care using locally sourced natural ingredients which are neatly formulated and handmade with love to give you the best treatment you deserve.</p>
+          </div>
         </div>
       </div>
       <div className='inspirationalquotes'>
@@ -249,16 +254,6 @@ function AppHero() {
               </ul>
             </div>
             <div>
-              <h3>FAQ</h3>
-              <ul>
-                <li>
-                  <Link to="./Blog">
-                  Blog
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div>
               <h3>Customer Support</h3>
               <ul>
                 <li>
@@ -266,33 +261,28 @@ function AppHero() {
                 </li>
                 <li>
                 <a href={emailAddress}>
-                  <FaEnvelopeOpenText />  beebeautyessentials@gmail.com
+                  <FaEnvelopeOpenText /> beebeautyessentials@gmail.com
                 </a>
                 </li>
               </ul>
               <div className="nav-icons">
-                <ul>
-                  <li>
-                    <a href={facebookProfile}>
-                    <FaFacebookSquare />
-                    </a>
-                  </li>
-                  <li>
-                    <a href={instagramProfile}>
-                    <FaInstagramSquare />
-                    </a>
-                  </li>
-                  <li>
-                    <a href={twitterProfile}>
-                    <FaSquareXTwitter />
-                    </a>
-                  </li>
-                </ul>
+                <a href={facebookProfile} target="_blank" rel="noopener noreferrer">
+                <FaFacebookSquare style={{ fontSize: '30px', marginRight:'5px' }} className="icons" />
+                </a>
+                <a href={instagramProfile}>
+                <FaInstagramSquare style={{ fontSize: '30px', marginRight:'5px' }} className="icons" />
+                </a>
+                <a href={twitterProfile}>
+                <FaSquareXTwitter style={{ fontSize: '30px' }} className="icons"  />
+                </a>
               </div>
             </div>
           </nav>
+          <div className="copyright">
+          <p>&copy; 2024 MadeByEmmyConcepts, All Rights Reserved.</p>
+          </div>
       </footer>
-    </>
+    </div>
   );
 }
 
