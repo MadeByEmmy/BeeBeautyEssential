@@ -12,12 +12,14 @@ import Contact from "./routes/Contact"
 import BeeBeauties from "./routes/Beebeauties"
 import Blog from "./routes/Blog"
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 const AppLayout = () => {
     return (
         <>
             <Navbar />
             <Outlet />
+            <Footer />
         </>
     );
 };

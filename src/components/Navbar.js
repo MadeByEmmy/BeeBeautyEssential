@@ -5,7 +5,6 @@ import "./Navbar.css"
 import {FaBars, FaTimes} from "react-icons/fa"
 import {IconContext} from "react-icons/lib"
 import beebeautyLogo from '../assets/logo.png'
-import { click } from '@testing-library/user-event/dist/click'
 
 
 function Navbar() {
