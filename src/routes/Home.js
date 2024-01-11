@@ -79,21 +79,27 @@ function AppHero() {
   //styling the stars
   const style = { color: "gold" }
 
-  //Subcription form
-  const form = useRef()
-
   //sending Emailjs function
+  const [buttonText, setButtonText] = useState('Subscribe');
+  //Subcription form
+  const formRef = useRef(null)
+  
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_cc1h1ew', 'template_oucmmak', form.current, 'p8yx2bdhcQYvRykI7')
-      .then(() => {
-          // change button text
+    setButtonText('Wait...'); // Change button text during sending
 
-      }, (error) => {
-          console.log(error.text);
+    emailjs.sendForm('service_cc1h1ew', 'template_oucmmak', formRef.current, 'p8yx2bdhcQYvRykI7')
+      .then(() => {
+        setButtonText('Subscription Successfull'); // Change button text on success
+
+        // Reset the form
+        formRef.current.reset();
+      })
+      .catch((error) => {
+        console.log(error.text);
+        setButtonText('Error Subscribing'); // Change button text on error
       });
-      e.target.reset()
   };
   
   return (
@@ -138,11 +144,11 @@ function AppHero() {
         <div className="subscription-form">
           <h3>Let’s Connect</h3>
           <p>Hi! Sign up for our newsletter and be the first to know about exclusive offers, heads up on new product updates and launches, pop-ups events of BeeBeauty Essentials, juicy discounts and more. </p>
-          <form ref={form} onSubmit={sendEmail} className="subscription-main-form">
-              <input type="text" placeholder="Full Name" name="name" required />
-              <input type="email" placeholder="Email Address" name="email" required />
-              <button type="submit" className="submit-btn">Subscribe</button>
-          </form>
+          <form ref={formRef} onSubmit={sendEmail}className="subscription-main-form-footer">
+                <input type="text" placeholder="Full Name" name="name" className="input_name" required />
+                <input type="email" placeholder="Email Address" name="email" className="input_email" required />
+                <button type="submit" className="submit-btn">{buttonText}</button>
+            </form>
         </div>
         </div>
         <div className="best-seller-pro">

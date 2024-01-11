@@ -1,0 +1,45 @@
+.contact {
+    margin: 50px 55px;
+}
+
+.get-in-touch {
+    display: flex;
+    justify-content: space-between;
+    background-color: #c2f5cc;
+    gap: 100px;
+    padding-left: 20px;
+}
+
+
+.get-in-touch-writeup h3 {
+    margin: 10px 0;
+}
+
+.contact-icons {
+    margin: 10px 0;
+}
+
+.ceo-contact-image img {
+    width: 300px;
+}
+
+.form {
+    width: 50%;
+    margin: 50px 250px 0 250px;
+
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input {
+    margin: 10px 0;
+    width: 100%;
+}
+
+.submit-btn {
+    width: 40%;
+    margin-top: 10px;
+}

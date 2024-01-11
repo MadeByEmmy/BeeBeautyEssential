@@ -34,7 +34,7 @@
 
 .submit-btn-footer {
     margin-left: 280px;
-    width: 15%;
+    width: 30%;
     padding: 5px 0;
     background-color: transparent;
     border-radius: 10px;
@@ -51,9 +51,19 @@
     margin: 10px 0;
 }
 
+.footer-nav li:hover,
+.footer-nav li:focus {
+    font-style: oblique;
+}
+
 .footer-nav a {
     text-decoration: none;
     color: black;
+}
+
+.nav-icons a:hover,
+.nav-icons a:focus {
+    color: grey;
 }
 
 .copyright {
