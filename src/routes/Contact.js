@@ -16,9 +16,9 @@ function Contact() {
 
     setButtonText('Sending...'); // Change button text during sending
 
-    emailjs.sendForm('service_cc1h1ew', 'template_dn4bind', formRef.current, 'p8yx2bdhcQYvRykI7')
+    emailjs.sendForm('service_sh9kylo', 'template_8ldbx4i', formRef.current, 'ACcT6cgGYHF3vHLVU')
       .then(() => {
-        setButtonText('Sent Successfully'); // Change button text on success
+        setButtonText('Message Sent'); // Change button text on success
 
         // Reset the form
         formRef.current.reset();
@@ -43,12 +43,12 @@ function Contact() {
         </div>
       </div>
       <div className='form'>
-        <h3>Leave us a Message</h3>
+        <h3>Leave Us A Message</h3>
         <form ref={formRef} onSubmit={sendEmail}className="contact-form">
           <input type="text" placeholder="Full Name *" name="user_name" className="input_name" required />
           <input type="email" placeholder="Email Address *" name="user_email" className="input_email" required />
-          <textarea name='message' style={{ width: '600px', height: '150px', padding:'10px' }} placeholder='Type your message here'></textarea>
-          <button type="submit" className="submit-btn">{buttonText}</button>
+          <textarea name='message' style={{ width: '600px', height: '150px', padding:'10px', borderRadius:'10px', border:'2px solid green' }} placeholder='Type your message here'></textarea>
+          <button type="submit" className="submit-btn-contact">{buttonText}</button>
         </form>
       </div>
     </div>

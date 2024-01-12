@@ -89,7 +89,7 @@ function AppHero() {
 
     setButtonText('Wait...'); // Change button text during sending
 
-    emailjs.sendForm('service_cc1h1ew', 'template_oucmmak', formRef.current, 'p8yx2bdhcQYvRykI7')
+    emailjs.sendForm('service_sh9kylo', 'template_hvcp6s9', formRef.current, 'ACcT6cgGYHF3vHLVU')
       .then(() => {
         setButtonText('Subscription Successfull'); // Change button text on success
 

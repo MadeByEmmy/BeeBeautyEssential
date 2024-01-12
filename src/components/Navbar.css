@@ -74,14 +74,12 @@
   }
 
   .nav-links:hover {
-    color: green;
-    transform: scale(1.1);
-    transition: all 3000s ease;
+    border-bottom: 3px solid #c2f5cc;
   }
   
   .activated {
-    border-bottom: 2px solid black;
-    padding-bottom: 10px;
+    border-bottom: 3px solid #c2f5cc;
+    padding-bottom: 5px;
   }
   
   .fa-bars {
