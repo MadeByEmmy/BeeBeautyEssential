@@ -21,7 +21,7 @@ import { FaQuoteLeft, FaQuoteRight} from "react-icons/fa6";
 
 
 
-  const heroData = [
+  const productImageData = [
   {
     id: 1,
     image: require('../assets/1.jpg'),
@@ -48,7 +48,7 @@ import { FaQuoteLeft, FaQuoteRight} from "react-icons/fa6";
   }
 ]
 
-const data = [
+const testimonialData = [
   {
     id: 1,
     username: "Emmanuel E.",
@@ -114,8 +114,25 @@ function AppHero() {
                 <button className='button'>BeeBeauties</button>
               </Link>
             </div>
-            <div>
-              
+            <div className="product-image-swiper-container">
+              <Swiper className="product-image-swiper"
+                modules={[Autoplay, Pagination, A11y]}
+                autoplay={{
+                  delay: 1000,
+                  disableOnInteraction: false,
+                }}
+                pagination={{ clickable: true}}
+                spaceBetween={0}
+                slidesPerView={1}
+                onSwiper={(swiper) => console.log(swiper)}
+                onSlideChange={() => console.log('slide change')}
+              >
+                {productImageData.map((productImageData,index) => (
+                  <SwiperSlide key={productImageData.id} virtualIndex={index} className="product-image-swiper">
+                    <img src={productImageData.image}/>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
             </div>
         </div>
         <div className="ceo-writeup">
@@ -186,13 +203,13 @@ function AppHero() {
           onSwiper={(swiper) => console.log(swiper)}
           onSlideChange={() => console.log('slide change')}
         >
-          {data.map((data,index) => (
-            <SwiperSlide key={data.id} virtualIndex={index} className="slide">
+          {testimonialData.map((testimonialData,index) => (
+            <SwiperSlide key={testimonialData.id} virtualIndex={index} className="slide">
               <div className="testimonial-desp">
-                <FaQuoteLeft className="quoteleft" />{data.testimonial }<FaQuoteRight className="quoteright" />
+                <FaQuoteLeft className="quoteleft" />{testimonialData.testimonial }<FaQuoteRight className="quoteright" />
               </div>
               <div className="review-name">
-                {data.username}
+                {testimonialData.username}
               </div>
               <div>
                 <FaStar style={style} /><FaStar style={style} /><FaStar style={style} /><FaStar style={style} /><FaStar style={style} />
