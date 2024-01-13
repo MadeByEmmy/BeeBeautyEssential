@@ -82,6 +82,9 @@
 
 .subscription-form {
     margin-top: 30px;
+    border: 2px solid #c2f5cc;
+    padding: 15px;
+    border-radius: 10px;
 }
 
 .subscription-main-form {
@@ -92,7 +95,7 @@
     border: 2px solid green;
     margin-right: 10px;
     padding: 5px 10px;
-    width: 250px;
+    width: 275px;
     border-radius: 10px;
 }
 

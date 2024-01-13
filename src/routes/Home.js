@@ -144,7 +144,7 @@ function AppHero() {
         <div className="subscription-form">
           <h3>Let’s Connect</h3>
           <p>Hi! Sign up for our newsletter and be the first to know about exclusive offers, heads up on new product updates and launches, pop-ups events of BeeBeauty Essentials, juicy discounts and more. </p>
-          <form ref={formRef} onSubmit={sendEmail}className="subscription-main-form-footer">
+          <form ref={formRef} onSubmit={sendEmail}className="subscription-main-form">
                 <input type="text" placeholder="Full Name" name="name" className="input_name" required />
                 <input type="email" placeholder="Email Address" name="email" className="input_email" required />
                 <button type="submit" className="submit-btn">{buttonText}</button>
