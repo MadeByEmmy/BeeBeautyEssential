@@ -98,7 +98,7 @@ function AppHero() {
       })
       .catch((error) => {
         console.log(error.text);
-        setButtonText('Error Subscribing'); // Change button text on error
+        setButtonText('Error Subscribing, Try Again'); // Change button text on error
       });
   };
   
