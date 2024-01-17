@@ -130,6 +130,7 @@
       color: green;
       transform: scale(1.1);
       transition: all 0.3s ease;
+      border-bottom: none;
     }
   
     .nav-item:hover {
@@ -143,7 +144,7 @@
     .navbar-logo {
       position: absolute;
       margin-left: -120px;
-      margin-top: -60px;
+      margin-top: -50px;
       transform: translate(25%, 50%);
     }
   
