@@ -46,7 +46,7 @@ function Footer() {
   };
   return (
     <>
-        <footer className="footer">
+      <footer className="footer">
           <div className="footer-form">
             <h3>Let’s Connect</h3>
             <p>Hi! Sign up for our newsletter and be the first to know about exclusive offers, heads up on new product updates and launches, pop-ups events of BeeBeauty Essentials, juicy discounts and more. </p>
@@ -57,7 +57,7 @@ function Footer() {
             </form>
           </div>
           <nav className="footer-nav">
-            <div>
+            <div className="footer-nav-menu">
               <h3>Shop</h3>
               <ul>
                 <li>
@@ -77,7 +77,7 @@ function Footer() {
                 </li>
               </ul>
             </div>
-            <div>
+            <div className="footer-nav-menu">
               <h3>About Us</h3>
               <ul>
                 <li>
@@ -87,7 +87,7 @@ function Footer() {
                 </li>
               </ul>
             </div>
-            <div>
+            <div className="footer-nav-menu">
               <h3>FAQ</h3>
               <ul>
                 <li>
@@ -97,7 +97,7 @@ function Footer() {
                 </li>
               </ul>
             </div>
-            <div>
+            <div className="footer-nav-menu">
               <h3>Customer Support</h3>
               <ul>
                 <li>

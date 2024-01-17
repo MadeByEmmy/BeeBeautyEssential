@@ -75,3 +75,34 @@
 .copyright p {
     text-align: center;
 }
+
+/*Media Query for Mobile phone and Tablets*/
+
+@media (max-width: 767px) {
+    .footer-form {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        width: 100%;
+        padding: 50px 20px 10px 20px;
+    }
+    .footer-form h3 {
+        margin-bottom: 10px;
+    }
+    .footer-form input {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .submit-btn-footer {
+        width: 40%;
+        margin: 0;
+    }
+    .footer-nav {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-nav-menu {
+        margin: 10px 0;
+    }
+}
