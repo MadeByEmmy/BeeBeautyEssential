@@ -112,4 +112,11 @@
     .footer {
         background-color: pink;
     }
+    .footer-form {
+        width: 65%;
+        margin: 0 130px;
+    }
+    .footer-form p {
+        text-align: justify;
+    }
 }
