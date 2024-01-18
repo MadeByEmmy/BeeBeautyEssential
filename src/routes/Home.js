@@ -166,7 +166,7 @@ function AppHero() {
         </div>
         </div>
         <div className="best-seller-pro">
-          <img src={bestseller} />
+          <img src={bestseller} alt="" />
         </div>
       </div>
       <div className="swipercontainer">
