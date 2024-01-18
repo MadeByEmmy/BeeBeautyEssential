@@ -129,7 +129,7 @@ function AppHero() {
               >
                 {productImageData.map((productImageData,index) => (
                   <SwiperSlide key={productImageData.id} virtualIndex={index} className="product-image-swiper">
-                    <img src={productImageData.image}/>
+                    <img src={productImageData.image} alt="productimage"/>
                   </SwiperSlide>
                 ))}
               </Swiper>
@@ -137,20 +137,17 @@ function AppHero() {
         </div>
         <div className="ceo-writeup">
           <div className='ceoimage-desp'>
-            <img src={ceoimage} />
-          </div>
-          <div>
-            <p>#</p>
+            <img src={ceoimage} alt=""/>
           </div>
         </div>
       </div>
       <div className='inspirationalquotes'>
           <div className='inspirdesp'>
-              <img src={inspired} />
+              <img src={inspired} alt="" />
               <p>INSPIRED BY BEAUTY</p>
-              <img src={sourced} />
+              <img src={sourced} alt=""/>
               <p>SOURCED FROM NATURE</p>
-              <img src={backed} />
+              <img src={backed} alt="" />
               <p>BACKED BY SCIENCE</p>
           </div>
       </div>
