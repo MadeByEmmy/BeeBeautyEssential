@@ -182,13 +182,6 @@
     .ceoimage-desp img {
         max-width: 100%;
     }
-    .bestseller {
-        display: flex;
-        flex-direction: row-reverse;
-    }
-    .best-seller-pro img {
-        max-width: 100%;
-    }
     .inspirdesp {
         margin: 0;
         width: auto;
@@ -197,5 +190,28 @@
         width: 30px;
         padding: 0;
     }
-    
+    .bestseller {
+        margin: 0px 20px 0 20px;
+    }
+    .bestseller-write {
+        display: flex;
+        flex-direction: column;
+    }
+    .best-seller-pro img {
+        max-width: 100%;
+    }
+    .subscription-form{
+        margin-top: 50px;
+        width: auto;
+    }
+    .subscription-main-form input {
+        width: 100%;
+        padding: 10px;
+    }
+    .subscription-main-form .input_name {
+        margin-bottom: 10px;
+    }
+    .swipercontainer {
+        margin: 0px 20px 0 20px;
+    }
 }
