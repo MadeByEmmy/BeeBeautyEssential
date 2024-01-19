@@ -81,7 +81,6 @@
 @media (max-width: 767px) {
     .footer {
         margin: 20px 20px;
-        background-color: green;
     }
     .footer-form {
         display: flex;
@@ -111,15 +110,23 @@
     }
 }
 
-@media (max-width: 1024px) {
-    .footer {
-        background-color: pink;
-    }
-    .footer-form {
-        width: 65%;
-        margin: 0 130px;
+@media only screen and (min-width: 768px) and (max-width: 834px){
+    .footer-form{
+        margin: auto;
     }
     .footer-form p {
         text-align: justify;
+    }
+    .submit-btn-footer {
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 834px) and (max-width: 1194px) {
+    .footer-form {
+        margin: auto;
+    }
+    .submit-btn-footer {
+        margin: auto;
     }
 }
