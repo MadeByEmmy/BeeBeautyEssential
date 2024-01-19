@@ -36,7 +36,6 @@
 .product-image-swiper {
     width: 450px;
     margin-top: -35px;
-    border: 2px solid black;
 }
 
 .ceo-writeup {
@@ -53,7 +52,7 @@
     width: 400px;
 }
 
-.inspirationalquotes img {
+.inspirdesp img {
     width: 60px;
     padding-left: 20px;
 }
@@ -62,7 +61,7 @@
     display: flex;
     flex-direction: row;
     background-color: white;
-    width: 50%;
+    width: 700px;
     margin-top: -100px;
     margin-left: 500px;
     margin-bottom: 20px;
@@ -71,7 +70,6 @@
     box-shadow: -1px 0px 10px 9px rgba(0,0,0,0.25);
     -webkit-box-shadow: -1px 0px 10px 9px rgba(0,0,0,0.25);
     -moz-box-shadow: -1px 0px 10px 9px rgba(0,0,0,0.25);;
-    border: 2px solid black;
 }
 
 .inspirdesp p {
@@ -81,13 +79,17 @@
 
 .bestseller {
     margin: 40px 60px 20px 60px;
-    display: flex;
-    gap: 40px;
 }
 
 .bestseller-write{
+    display: flex;
+    gap: 40px;
     margin-top: 100px;
+}
+
+.bestseller-write-up{
     text-align: justify;
+    margin-top: 50px;
 }
 
 .best-seller-pro img {
@@ -95,10 +97,12 @@
 }
 
 .subscription-form {
-    margin-top: 30px;
     border: 2px solid #c2f5cc;
     padding: 15px;
     border-radius: 10px;
+    width: 63%;
+    margin-top: -200px;
+    margin-bottom: 100px;
 }
 
 .subscription-main-form {
@@ -109,7 +113,7 @@
     border: 2px solid green;
     margin-right: 10px;
     padding: 5px 10px;
-    width: 275px;
+    width: 48%;
     border-radius: 10px;
 }
 
@@ -118,6 +122,8 @@
     border: 1px solid green;
     background-color: transparent;
     border-radius: 10px;
+    display: flex;
+    margin-top: 10px;
 }
 
 
@@ -156,9 +162,9 @@
     font-size: medium;
 }
 
-@media (max-width:767px){
+@media (max-width: 767px){
     .homepage{
-        margin: 0px 40px 0 40px;
+        margin: 0px 20px 0 20px;
     }
     .aboutus {
         display: flex;
@@ -170,31 +176,26 @@
     .product-image-swiper{
         width: 350px;
     }
+    .ceo-writeup {
+        margin: 0px 20px 0 20px;
+    }
     .ceoimage-desp img {
         max-width: 100%;
     }
     .bestseller {
         display: flex;
-        flex-direction: column;
+        flex-direction: row-reverse;
     }
     .best-seller-pro img {
         max-width: 100%;
     }
-    .inspirationalquotes {
-        width: 160%;
-        margin: 0 45px;
-    }
     .inspirdesp {
         margin: 0;
-        max-width: 100%;
+        width: auto;
     }
     .inspirdesp img {
-        width: 25px;
+        width: 30px;
         padding: 0;
-    }
-    .inspirdesp p {
-        font-size: 10px;
-        
     }
     
 }

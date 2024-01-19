@@ -153,8 +153,14 @@ function AppHero() {
       </div>
       <div className="bestseller">
         <div className="bestseller-write">
+        <div className="bestseller-write-up">
         <h3>Our Best Seller</h3>
         <p>Transform your beauty routine into a masterpiece with our latest cosmetic sensation! 🌟 Unveil the magic of radiant hues, flawless finishes, and a touch of glamour. Elevate your look with a dash of luxury and a sprinkle of confidence. Unleash your inner glow and let your beauty shine, because you're not just using cosmetics – you're creating a masterpiece. Indulge in the extraordinary, embrace your allure!"</p>
+        </div>
+        <div className="best-seller-pro">
+          <img src={bestseller} alt="" />
+        </div>
+        </div>
         <div className="subscription-form">
           <h3>Let’s Connect</h3>
           <p>Hi! Sign up for our newsletter and be the first to know about exclusive offers, heads up on new product updates and launches, pop-ups events of BeeBeauty Essentials, juicy discounts and more. </p>
@@ -163,10 +169,6 @@ function AppHero() {
                 <input type="email" placeholder="Email Address" name="email" className="input_email" required />
                 <button type="submit" className="submit-btn">{buttonText}</button>
             </form>
-        </div>
-        </div>
-        <div className="best-seller-pro">
-          <img src={bestseller} alt="" />
         </div>
       </div>
       <div className="swipercontainer">
