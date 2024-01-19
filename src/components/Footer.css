@@ -81,6 +81,7 @@
 @media (max-width: 767px) {
     .footer {
         margin: 20px 20px;
+        background-color: green;
     }
     .footer-form {
         display: flex;
@@ -110,7 +111,7 @@
     }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (max-width: 1024px) {
     .footer {
         background-color: pink;
     }
