@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
   }
-  
+
   .navbar {
     padding-bottom: 30px;
     margin: 10px 0;
@@ -91,6 +91,10 @@
   }
   
   @media screen and (max-width: 767px) {
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
     .NavbarItems {
       position: relative;
     }
@@ -105,6 +109,7 @@
       position: absolute;
       top: 100px;
       left: -100%;
+      height: -100%;
       opacity: 1;
       transition: all 0.5s ease;
     }

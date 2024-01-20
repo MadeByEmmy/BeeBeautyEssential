@@ -124,6 +124,7 @@
     border-radius: 10px;
     display: flex;
     margin-top: 10px;
+    cursor: pointer;
 }
 
 
@@ -163,6 +164,10 @@
 }
 
 @media (max-width: 767px) {
+    p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
     .homepage{
         margin: 0px 20px 0 20px;
     }
@@ -190,6 +195,9 @@
     .inspirdesp img {
         width: 30px;
         padding: 0;
+    }
+    .inspirdesp p {
+        font-size: medium;
     }
     .bestseller {
         margin: 0px 20px 0 20px;

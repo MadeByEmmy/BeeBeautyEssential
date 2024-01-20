@@ -5,47 +5,101 @@
 .get-in-touch {
     display: flex;
     justify-content: space-between;
-    background-color: #c2f5cc;
-    gap: 100px;
+    gap: 50px;
     padding-left: 20px;
+    margin: 0;
 }
 
-
-.get-in-touch-writeup h3 {
-    margin: 10px 0;
+.get-in-touch-writeup-header {
+    margin-bottom: 50px;
 }
-
-
 
 .contact-icons {
     margin: 10px 0;
 }
 
 .ceo-contact-image img {
-    width: 300px;
-}
-
-.form {
-    width: 50%;
-    margin: 50px 250px 0 250px;
+    width: 400px;
+    border-radius: 10px;
 }
 
 .contact-form {
+    margin: 50px 250px 0 250px;
+}
+
+.contact-form-main {
     display: flex;
     flex-direction: column;
 }
 
-.contact-form input {
-    margin: 10px 0;
-    width: 100%;
+.contact-form-main input {
+    margin: 5px 0;
+    width: 580px;
+}
+
+.contact-form-main textarea {
+    width: 580px;
+    height: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid green;
 }
 
 .submit-btn-contact {
-    width: 40%;
     margin-top: 10px;
     background-color: transparent;
     border: 2px solid green;
     padding: 5px 0;
     border-radius: 10px;
-    
+    cursor: pointer;
+    width: 150px;
+}
+
+@media (max-width: 768px) {
+    p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    .contact {
+        margin: 20px 20px;
+    }
+    .get-in-touch {
+        display: flex;
+        flex-direction: column;
+    }
+    .ceo-contact-image img {
+        width: 95%;
+        margin-bottom: 50px;
+    }
+    .contact-form {
+        margin: 0;
+    }
+    .contact-form-main input {
+        width: auto;
+    }
+    .contact-form-main textarea {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 834px) {
+    .get-in-touch {
+        display: flex;
+        flex-direction: row;
+    }
+    .contact-form {
+        margin: 0 20px;
+    }
+    .contact-form-main input {
+        width: 670px;
+    }
+    .contact-form-main textarea {
+        width: 670px;
+    }
+}
+
+@media only screen and (min-width: 834px) and (max-width: 1194px) {
+    .contact-form {
+        margin: 50px 150px;
+    }
 }

@@ -8,7 +8,6 @@ import beebeautyLogo from '../assets/logo.png'
 
 
 function Navbar() {
-  
   const [click, setClick] = useState(false)
   
   const handleClick = () => setClick(!click)

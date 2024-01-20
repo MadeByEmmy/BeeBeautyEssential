@@ -5,7 +5,7 @@ import comingsoonimage from "../assets/page_coming_soon.jpg"
 function Blog() {
   return (
     <div className='blog'>
-        <img src={comingsoonimage} alt='blog image'/>
+        <img src={comingsoonimage} alt='blog_image'/>
     </div>
   )
 }

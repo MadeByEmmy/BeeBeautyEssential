@@ -32,22 +32,26 @@ function Contact() {
     <div className='contact'>
       <div className='get-in-touch'>
         <div className='get-in-touch-writeup'>
-          <h3>Get In Touch</h3>
-          <p>Whether you are looking for more information on our product, or you just want to say Hi. We would love to hear from you.</p>
-          <h3>General Enquires</h3>
-          <div className='contact-icons'><FaEnvelopeOpenText /> beebeautyessentials@gmail.com</div>
-          <div  className='contact-icons'><FaPhoneSquareAlt />  +234 802 222 5861</div>
+          <div className='get-in-touch-writeup-header'>
+            <h3>Get In Touch</h3>
+            <p>Whether you are looking for more information on our product, or you just want to say Hi. We would love to hear from you.</p>
+          </div>
+          <div>
+            <h3>General Enquires</h3>
+            <div className='contact-icons'><FaEnvelopeOpenText /> beebeautyessentials@gmail.com</div>
+            <div  className='contact-icons'><FaPhoneSquareAlt />  +234 802 222 5861</div>
+          </div>
         </div>
         <div className='ceo-contact-image'>
-          <img src={ceoimage}  />
+          <img src={ceoimage} alt='ceoimage' />
         </div>
       </div>
-      <div className='form'>
+      <div className='contact-form'>
         <h3>Leave Us A Message</h3>
-        <form ref={formRef} onSubmit={sendEmail}className="contact-form">
+        <form ref={formRef} onSubmit={sendEmail} className="contact-form-main">
           <input type="text" placeholder="Full Name *" name="user_name" className="input_name" required />
           <input type="email" placeholder="Email Address *" name="user_email" className="input_email" required />
-          <textarea name='message' style={{ width: '600px', height: '150px', padding:'10px', borderRadius:'10px', border:'2px solid green' }} placeholder='Type your message here'></textarea>
+          <textarea name='message'  placeholder='Type your message here'></textarea>
           <button type="submit" className="submit-btn-contact">{buttonText}</button>
         </form>
       </div>
