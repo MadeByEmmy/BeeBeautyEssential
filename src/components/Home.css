@@ -72,10 +72,17 @@
     -moz-box-shadow: -1px 0px 10px 9px rgba(0,0,0,0.25);;
 }
 
-.inspirdesp p {
+.inspirdesp .special {
     border-right: 1px solid green;
     padding: 0 5px;
 }
+.inspiredpara {
+    border-right: 1px solid green;
+}
+.inspiredimg {
+    padding-left: 5px;
+}
+
 
 .bestseller {
     margin: 40px 60px 20px 60px;
@@ -189,15 +196,24 @@
         max-width: 100%;
     }
     .inspirdesp {
-        margin: 0;
-        width: auto;
+        margin: auto;
+        width: 90%;
+    }
+    .inspiredpara {
+        border-right: 1px solid green;
+    }
+    .inspiredimg{
+        margin-left: 5px;
+    }
+    .inspiredpara{
+        padding-right: 10px;
     }
     .inspirdesp img {
         width: 30px;
         padding: 0;
     }
     .inspirdesp p {
-        font-size: medium;
+        font-size: small;
     }
     .bestseller {
         margin: 0px 20px 0 20px;

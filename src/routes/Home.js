@@ -144,9 +144,9 @@ function AppHero() {
       <div className='inspirationalquotes'>
           <div className='inspirdesp'>
               <img src={inspired} alt="" />
-              <p>INSPIRED BY BEAUTY</p>
-              <img src={sourced} alt=""/>
-              <p>SOURCED FROM NATURE</p>
+              <p className="inspiredpara">INSPIRED BY BEAUTY</p>
+              <img src={sourced} alt="" className="inspiredimg"/>
+              <p className="special">SOURCED FROM NATURE</p>
               <img src={backed} alt="" />
               <p>BACKED BY SCIENCE</p>
           </div>
