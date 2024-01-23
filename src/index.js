@@ -6,14 +6,19 @@ import {
   RouterProvider,
   Outlet,
 } from "react-router-dom";
+
+// importing from routes
 import Home from "./routes/Home"
 import Contact from "./routes/Contact"
 import BeeBeauties from "./routes/Beebeauties"
 import Blog from "./routes/Blog"
+import Success from "./routes/Success";
+import Cancel from "./routes/Cancel"
+
+//impprting from componenets
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import Success from "./components/Success";
-import Cancel from "./components/Cancel";
+
 
 function AppLayout() {
     return (

@@ -1,6 +1,8 @@
 import React, {useRef, useState} from "react";
 //importing Email.js 
 import emailjs from '@emailjs/browser';
+
+//importing the css component
 import "../components/Home.css"
 import ceoimage from "../assets/7.jpg"
 import inspired from "../assets/8.jpg"
@@ -8,14 +10,18 @@ import sourced from "../assets/9.jpg"
 import backed from "../assets/10.jpg"
 import bestseller from "../assets/result.png"
 import { Link } from 'react-router-dom';
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay,A11y,Pagination} from 'swiper/modules';
 // Import Swiper styles
+
 import 'swiper/css';
 // import Swiper core and required modules
+
 import 'swiper/css/pagination';
 //import React Icons
+
 import { FaStar } from "react-icons/fa";
 import { FaQuoteLeft, FaQuoteRight} from "react-icons/fa6";
 
