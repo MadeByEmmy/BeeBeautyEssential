@@ -5,6 +5,7 @@ import "./Navbar.css"
 import {FaBars, FaTimes} from "react-icons/fa"
 import {IconContext} from "react-icons/lib"
 import beebeautyLogo from '../assets/logo.png'
+import {Button, Modal} from 'react-bootstrap'
 
 
 function Navbar() {
@@ -49,6 +50,7 @@ function Navbar() {
                         </NavLink>
                     </li>
                 </ul>
+                <Button>Cart 0 Items</Button>
             </div>
         </nav>
     </IconContext.Provider>

@@ -1,5 +1,6 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
+import 'bootstrap/dist/css/bootstrap.min.css'
 import {
   createBrowserRouter,
   RouterProvider,
@@ -11,8 +12,10 @@ import BeeBeauties from "./routes/Beebeauties"
 import Blog from "./routes/Blog"
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Success from "./components/Success";
+import Cancel from "./components/Cancel";
 
-const AppLayout = () => {
+function AppLayout() {
     return (
         <>
             <Navbar />
@@ -20,7 +23,7 @@ const AppLayout = () => {
             <Footer />
         </>
     );
-};
+}
 
 const router = createBrowserRouter([
     {
@@ -42,6 +45,14 @@ const router = createBrowserRouter([
                 path: "beebeauties",
                 element: <BeeBeauties />,
             },
+            {
+                path: "success",
+                element: <Success />,
+            },
+            {
+                path: "cancel",
+                element: <Cancel />,
+            }
         ],
     },
 ]);
