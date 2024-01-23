@@ -1,6 +1,8 @@
 import React from 'react'
 import {Row, Col} from "react-bootstrap"
 import "../components/Beebeauties.css"
+
+//importing from the dataStore
 import { beebeautyProductstore } from "../dataStore/beebeautyProductstore"
 
 //importing the product card component

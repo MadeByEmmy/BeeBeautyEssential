@@ -25,61 +25,9 @@ import 'swiper/css/pagination';
 import { FaStar } from "react-icons/fa";
 import { FaQuoteLeft, FaQuoteRight} from "react-icons/fa6";
 
-
-
-  const productImageData = [
-  {
-    id: 1,
-    image: require('../assets/whipped_ butter_ with_tumeric.jpg'),
-  },
-  {
-    id: 2,
-    image: require('../assets/African_black_soap_lavender_honey.jpg'),
-  },
-  {
-    id: 3,
-    image: require('../assets/Sheapleasure_whipped_body_and_hair_butter.jpg'),
-  },
-  {
-    id: 4,
-    image: require('../assets/Aromatherapeutic_liquid_African_black_soap.jpg'),
-  },
-  {
-    id: 5,
-    image: require('../assets/Brightening_liquid_African_Black_soap.jpg'),
-  },
-  {
-    id: 6,
-    image: require('../assets/Afican_black_soap_lemongrass_honey.jpg')
-  }
-]
-
-const testimonialData = [
-  {
-    id: 1,
-    username: "Emmanuel E.",
-    testimonial: "I have used products from other suppliers, but BeeBeauty Essentials is the best,my experience     with her product has been the best and I can guarantee you the perfect results that you want. 💯💯💯💯",
-    star: <FaStar />
-  },
-  {
-    id: 2,
-    username: "Tomiloloa O.",
-    testimonial: "Absolutely lovely and effective products. The packaging is also top notch, it's so much bigger than it looks in the pictures. Great value for money. I use the Black soap for my 4 year old too and Hubby uses the liquid black soap too. Absolutely recommend!",
-    star: <FaStar />
-  },
-  {
-    id: 3,
-    username: "Queen O.",
-    testimonial: "My husband and I have used the products for a while now, it makes our skin feel smooth no matter the weather. I would definitely recommend to anyone looking to feel and smell good 😎",
-    star: <FaStar />
-  },
-  {
-    id: 4,
-    username: "Rowland O.",
-    testimonial: "I have used products from other suppliers, but BeeBeauty Essentials is the best,my experience     with her product has been the best and I can guarantee you the perfect results that you want.",
-    star: <FaStar />
-  }
-]
+//importing from the dataStore
+import { productImageData } from "../dataStore/productImageData"
+import { testimonialData } from "../dataStore/testimonialData"
 
 function AppHero() {
   //styling the stars

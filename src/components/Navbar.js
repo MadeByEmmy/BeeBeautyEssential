@@ -2,13 +2,16 @@ import React, {useState} from 'react'
 import { Link } from "react-router-dom"
 import { NavLink } from "react-router-dom"
 import "./Navbar.css"
-import {FaBars, FaTimes} from "react-icons/fa"
+import {FaBars, FaTimes, FaShoppingCart} from "react-icons/fa"
 import {IconContext} from "react-icons/lib"
 import beebeautyLogo from '../assets/logo.png'
 import {Button, Modal} from 'react-bootstrap'
 
 
 function Navbar() {
+  //styling the stars
+  const style = { color: "black" }
+  
   const [click, setClick] = useState(false)
   
   const handleClick = () => setClick(!click)
@@ -26,7 +29,7 @@ function Navbar() {
                 <div className='navbar-container container'>
                     <div className="logo">
                         <Link to="/" className="navbar-logo" >
-                            <img src={beebeautyLogo} alt='logo' width={150} onClick={closeMobileMenu}/>
+                            <img src={beebeautyLogo} alt='logo'onClick={closeMobileMenu}/>
                             <p>Giving you the confidence to wear the skin you like.</p>
                         </Link>
                     </div>
@@ -55,7 +58,7 @@ function Navbar() {
                             </NavLink>
                         </li>
                     </ul>
-                    <Button onClick={handleShow}>Cart 0 Items</Button>
+                    <Button onClick={handleShow} className='cart'><FaShoppingCart className='cart-icon' style={style}/><>0</></Button>
                 </div>
             </nav>
             <Modal show={show} onHide={handleClose}> 
