@@ -1,6 +1,7 @@
 import React from 'react'
 import {Row, Col} from "react-bootstrap"
 import "../components/Beebeauties.css"
+import { beebeautyProductstore } from "../dataStore/beebeautyProductstore"
 
 function Beebeauties() {
   return (

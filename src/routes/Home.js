@@ -30,7 +30,7 @@ import { FaQuoteLeft, FaQuoteRight} from "react-icons/fa6";
   const productImageData = [
   {
     id: 1,
-    image: require('../assets/whippe_ butter_ with_tumeric.jpg'),
+    image: require('../assets/whipped_ butter_ with_tumeric.jpg'),
   },
   {
     id: 2,
