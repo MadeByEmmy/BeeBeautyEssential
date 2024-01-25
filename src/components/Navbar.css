@@ -20,13 +20,25 @@
   }
 
   .cart {
-    background-color: #c2f5cc;
+    background-color: transparent;
     border: none;
-    padding: 10px;
+    display: flex;
+    border: 2px solid #c2f5cc;
   }
 
   .cart-icon {
-    font-size: 30px;
+    font-size: 35px;
+  }
+
+  .total-numbers-cart {
+    color: black;
+    font-size: 20px;
+    margin-top: -25px;
+    margin-right: -25px;
+    background-color: #c2f5cc;
+    color: white;
+    padding: 0 10px;
+    border-radius: 25px;
   }
 
   .navbar-container {

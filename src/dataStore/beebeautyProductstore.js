@@ -3,7 +3,7 @@ const beebeautyProductstore = [
     {
         id: "1",
         title: "Whipped butter with tumeric",
-        image: require('../assets/whipped_ butter_ with_tumeric.jpg'),
+        image: require('../assets/whipped_ butter_ with_tumeric_soap.jpg'),
         price: 3000
     },
     {

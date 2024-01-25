@@ -16,7 +16,7 @@ function Navbar() {
   const cart = useContext(CartContext);
   const productsCount = cart.items.reduce((sum, product) => sum + product.quantity, 0)
 
-  //styling the FaStar
+  //styling the FaShopping cart
   const style = { color: "black" }
   
   // controller for the navigation mobile view
@@ -65,7 +65,7 @@ function Navbar() {
                             </NavLink>
                         </li>
                     </ul>
-                    <Button onClick={handleShow} className='cart'><FaShoppingCart className='cart-icon' style={style}/><p className='total-numbers-cart'>cart({productsCount} items)</p></Button>
+                    <Button onClick={handleShow} className='cart'><FaShoppingCart className='cart-icon' style={style}/><p className='total-numbers-cart'>{productsCount}</p></Button>
                 </div>
             </nav>
             <Modal show={show} onHide={handleClose}> 

@@ -1,5 +1,5 @@
 import React from 'react'
-import {Row, Col} from "react-bootstrap"
+import {Row, Col, ThemeProvider} from "react-bootstrap"
 import "../components/Beebeauties.css"
 
 //importing from the dataStore
@@ -12,17 +12,18 @@ function Beebeauties() {
   return (
     <>
       <div className='beebeauties'>
-        <h1>BeebeautiesPage</h1>
-        <Row xs={1} md={4} className='g-4'>
-          {beebeautyProductstore.map((product, index) => (
+            <h1>BeebeautiesPage</h1>
+            <Row xs={1} sm={6} md={2} lg={3} xl={4}  className='g-4'>
+              {beebeautyProductstore.map((product, index) => (
             <Col align="center" key={index}>
               <ProductCard product={product}/>
             </Col>
-          ))}
-        </Row>
+            ))}
+            </Row>
       </div>
     </>
   )
 }
 
 export default Beebeauties
+
