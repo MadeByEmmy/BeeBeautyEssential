@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState, useContext } from 'react'
 import { Link } from "react-router-dom"
 import { NavLink } from "react-router-dom"
 import "./Navbar.css"
@@ -7,17 +7,24 @@ import {IconContext} from "react-icons/lib"
 import beebeautyLogo from '../assets/logo.png'
 import {Button, Modal} from 'react-bootstrap'
 
+//importing from CartContext
+import { CartContext } from '../CartContext'
+
 
 function Navbar() {
-  //styling the stars
+  // controller for the CartContext Shopping cart modal section
+  const cart = useContext(CartContext);
+  const productsCount = cart.items.reduce((sum, product) => sum + product.quantity, 0)
+
+  //styling the FaStar
   const style = { color: "black" }
   
+  // controller for the navigation mobile view
   const [click, setClick] = useState(false)
-  
   const handleClick = () => setClick(!click)
   const closeMobileMenu = () => setClick(false)
 
-  // controller of the shopping cart section
+  // controller of the shopping cart modal section
   const [show, setShow] = useState(false)
   const handleClose = () => setShow(false)
   const handleShow = () => setShow(true)
@@ -58,7 +65,7 @@ function Navbar() {
                             </NavLink>
                         </li>
                     </ul>
-                    <Button onClick={handleShow} className='cart'><FaShoppingCart className='cart-icon' style={style}/><>0</></Button>
+                    <Button onClick={handleShow} className='cart'><FaShoppingCart className='cart-icon' style={style}/><p className='total-numbers-cart'>cart({productsCount} items)</p></Button>
                 </div>
             </nav>
             <Modal show={show} onHide={handleClose}> 
@@ -66,7 +73,22 @@ function Navbar() {
                     <Modal.Title>Shopping Cart</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                        <h1>This is the modal Body</h1>
+                        {productsCount > 0 ?
+                            <>
+                                <p>Items in your cart</p>
+                                {cart.items.map((currentProduct, index) => (
+                                    <h1>{currentProduct.id}</h1>
+                                ))}
+
+                                <h1>Total: {cart.getTotalCost().toFixed(2)}</h1>
+                                
+                                <Button variant='success'>
+                                    Purchase Items
+                                </Button>
+                            </>
+                        :
+                            <h1>There are no items in your Cart</h1>
+                        }
                 </Modal.Body>
             </Modal>
         </IconContext.Provider>
