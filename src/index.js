@@ -19,14 +19,17 @@ import Cancel from "./routes/Cancel"
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
+//importing from cartContext
+import CartProvider from "./CartContext";
+
 
 function AppLayout() {
     return (
-        <>
+        <CartProvider>
             <Navbar />
             <Outlet />
             <Footer />
-        </>
+        </CartProvider>
     );
 }
 
