@@ -1,5 +1,5 @@
 import React from 'react'
-import {Row, Col, ThemeProvider} from "react-bootstrap"
+import {Row, Col,} from "react-bootstrap"
 import "../components/Beebeauties.css"
 
 //importing from the dataStore
