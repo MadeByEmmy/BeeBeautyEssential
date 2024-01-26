@@ -1,7 +1,7 @@
 const productImageData = [
     {
       id: 1,
-      image: require('../assets/whipped_ butter_ with_tumeric.jpg'),
+      image: require('../assets/whipped_ butter_ with_tumeric_soap.jpg'),
     },
     {
       id: 2,

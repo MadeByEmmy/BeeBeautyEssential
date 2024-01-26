@@ -9,8 +9,17 @@ function ProductCard(props) { // props.product is the product we are selling
     const productQuantity = cart.getProductQuantity(product.id);
     console.log(cart.items);
 
+    // styling the Card 
+    const cardStyle = {
+      maxWidth: '300px',
+      margin: '5px',
+      padding: '5px',
+      boxShadow: '0 4px 8px rgba(194, 245, 204, 0.5)',
+      borderRadius: '8px',
+    };
+
   return (
-    <Card>
+    <Card style={cardStyle}>
         <Card.Body>
             <img src={product.image} alt='' style={{ width: '100%', maxWidth: '300px' }}/>
             <Card.Title>{product.title}</Card.Title>
@@ -20,8 +29,8 @@ function ProductCard(props) { // props.product is the product we are selling
                   <Form as={Row}>
                       <Form.Label column="true" sm="6">In Cart: {productQuantity}</Form.Label>
                       <Col sm="6">
-                        <Button sm="6" onClick={() => cart.addOneToCart(product.id)} className="mx-2">+</Button>
-                        <Button sm="6" onClick={() => cart.removeOneFromCart(product.id)} className="mx-2">-</Button>
+                        <Button  sm="6" onClick={() => cart.addOneToCart(product.id)} className="mx-2">+</Button>
+                        <Button  sm="6" onClick={() => cart.removeOneFromCart(product.id)} className="mx-2">-</Button>
                       </Col>
                   </Form>
                   <Button variant='danger' onClick={() => cart.deleteFromCart(product.id)} className='my-2'>Remove from cart</Button>

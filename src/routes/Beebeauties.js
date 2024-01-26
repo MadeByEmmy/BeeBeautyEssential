@@ -12,8 +12,8 @@ function Beebeauties() {
   return (
     <>
       <div className='beebeauties'>
-            <h1>BeebeautiesPage</h1>
-            <Row xs={1} sm={6} md={2} lg={3} xl={4}  className='g-4'>
+            <h1>BeebeautiesPage</h1> 
+            <Row xs={1} md={2} xl={4}  className='g-4'> {/*xs = mobile phone screen view, md = tablets view, xl = laptop view*/}
               {beebeautyProductstore.map((product, index) => (
             <Col align="center" key={index}>
               <ProductCard product={product}/>

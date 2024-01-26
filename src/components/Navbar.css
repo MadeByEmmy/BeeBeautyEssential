@@ -26,6 +26,14 @@
     border: 2px solid #c2f5cc;
   }
 
+  .cart:focus,
+  .cart:hover {
+    background-color: transparent;
+    transform: scale(0.9);
+    transition: background-color 0.3s ease, border 0.3s ease, transform 0.3s ease;
+    border: 2px solid black;
+  }
+
   .cart-icon {
     font-size: 35px;
   }
@@ -130,7 +138,7 @@
     }
 
     .cart {
-      margin-right: 20px;
+      margin-right: 35px;
       margin-top: 8px;
       position: relative;
     }

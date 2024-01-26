@@ -2,7 +2,7 @@
 const beebeautyProductstore = [
     {
         id: "1",
-        title: "Whipped butter with tumeric",
+        title: "Whipped butter with tumeric soap",
         image: require('../assets/whipped_ butter_ with_tumeric_soap.jpg'),
         price: 3000
     },
