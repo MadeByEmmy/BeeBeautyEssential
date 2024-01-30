@@ -79,7 +79,7 @@ function Navbar() {
                             <>
                                 <p>Items in your cart</p>
                                 {cart.items.map((currentProduct, index) => (
-                                    <CartProduct key={index} id={currentProduct.id} quantity={currentProduct.quantity}></CartProduct>
+                                    <CartProduct key={index} id={currentProduct.id} quantity={currentProduct.quantity}  ></CartProduct>
                                 ))}
 
                                 <h1>Total: {cart.getTotalCost().toFixed(2)}</h1>
