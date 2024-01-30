@@ -1,4 +1,4 @@
-import { Button } from "react-bootstrap/Button";
+import { Button } from "react-bootstrap";
 import { CartContext } from "../CartContext";
 import { useContext } from "react";
 import { getProductData } from "../dataStore/beebeautyProductstore";
@@ -12,10 +12,12 @@ function CartProduct(props) {
 
     return (
         <>
-            <img src={productData.image} alt="productimage" />
+            <img src={productData.image} alt="productimage" style={{ width: '100%'}} />
             <h3>{productData.title}</h3>
             <p>{quantity} total</p>
-            <Button></Button>
+            <p>₦</p>
+            <Button size="sm" onClick={() => cart.deleteFromCart(id)}>Remove</Button>
+            <hr></hr>
         </>
     )
 }

@@ -7,6 +7,8 @@ import {IconContext} from "react-icons/lib"
 import beebeautyLogo from '../assets/logo.png'
 import {Button, Modal} from 'react-bootstrap'
 
+import CartProduct from './CartProduct'
+
 //importing from CartContext
 import { CartContext } from '../CartContext'
 
@@ -77,7 +79,7 @@ function Navbar() {
                             <>
                                 <p>Items in your cart</p>
                                 {cart.items.map((currentProduct, index) => (
-                                    <h1>{currentProduct.id}</h1>
+                                    <CartProduct key={index} id={currentProduct.id} quantity={currentProduct.quantity}></CartProduct>
                                 ))}
 
                                 <h1>Total: {cart.getTotalCost().toFixed(2)}</h1>
