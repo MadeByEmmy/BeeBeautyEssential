@@ -13,20 +13,22 @@ function CartProduct(props) {
     const productData = getProductData(id);
 
     return (
-        <>
-            <img src={productData.image} alt="productimage" style={{ width: '100%'}} />
-            <h3>{productData.title}</h3>
-            <p>{quantity} quantities * ₦{productData.price} </p>
+        <div className="cartproduct" style={{width: '100%'}}>
+            <img src={productData.image} alt="productimage" style={{ width: '50%'}} />
+            <div className="product-tittle"><h3>{productData.title}</h3></div>
+            <div className="subtotal"><p>{quantity} quantities * ₦{productData.price} </p></div>
             
-            <p>₦{ (quantity * productData.price.toFixed(2)) } </p>
-            <Col sm="6">
-                        <Button  size="sm" onClick={() => cart.addOneToCart(id)} className="mx-2">+</Button>
-                        <Button  size="sm" onClick={() => cart.removeOneFromCart(id)} className="mx-2">-</Button>
-                        <Button size="sm" onClick={() => cart.deleteFromCart(id)}>Remove</Button>
-            </Col>
+            <div className="total"><p>₦{ (quantity * productData.price.toFixed(2)) } </p></div>
+            <div className="controls">
+                <Col sm="6">
+                            <Button  size="sm" onClick={() => cart.addOneToCart(id)} className="mx-2">+</    Button>
+                            <Button  size="sm" onClick={() => cart.removeOneFromCart(id)} className="mx-2">-</Button>
+                            <Button size="sm" onClick={() => cart.deleteFromCart(id)}>Remove</Button>
+                </Col>
+            </div>
             
             <hr></hr>
-        </>
+        </div>
     )
 }
 

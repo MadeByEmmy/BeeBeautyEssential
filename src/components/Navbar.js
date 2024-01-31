@@ -70,7 +70,7 @@ function Navbar() {
                     <Button onClick={handleShow} className='cart'><FaShoppingCart className='cart-icon' style={style}/><p className='total-numbers-cart'>{productsCount}</p></Button>
                 </div>
             </nav>
-            <Modal show={show} onHide={handleClose}> 
+            <Modal show={show} onHide={handleClose} size='lg' > 
                 <Modal.Header closeButton>
                     <Modal.Title>Shopping Cart</Modal.Title>
                 </Modal.Header>
