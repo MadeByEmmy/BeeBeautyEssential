@@ -74,12 +74,11 @@
 
 .copyright {
     border-top: 3px solid white;
-    margin: 20px 0 20px 0;
-    padding: 10px 0 10px 0;
 }
 
 .copyright p {
     text-align: center;
+    padding-bottom: 10px;
 }
 
 /*Media Query for Mobile phone and Tablets*/
