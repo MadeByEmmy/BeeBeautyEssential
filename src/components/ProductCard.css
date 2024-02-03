@@ -5,13 +5,17 @@
     color: black;
 }
 
-.emma {
+.col {
     display: flex;
     justify-content: space-evenly;
 }
 
 .form {
     margin: auto;
+}
+
+.button:active {
+    outline: #c2f5cc;
 }
 
 
