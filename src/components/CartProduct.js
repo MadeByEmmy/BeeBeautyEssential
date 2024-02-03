@@ -3,7 +3,7 @@ import { CartContext } from "../CartContext";
 import { useContext } from "react";
 import { getProductData } from "../dataStore/beebeautyProductstore";
 
-
+import "./CartProduct.css"
 
 function CartProduct(props) {
     const cart = useContext(CartContext);
@@ -14,19 +14,18 @@ function CartProduct(props) {
     const productData = getProductData(id);
 
     return (
-        <>
+        <div className="emma">
             <img src={productData.image} alt="productimage" />
             <h3>{productData.title}</h3>
             <p>{quantity} quantities * ₦{productData.price} </p>
-            
             <p>₦{ (quantity * productData.price.toFixed(2)) } </p>
-                <Col sm="6">
-                        <Button  size="sm" onClick={() => cart.addOneToCart(id)} className="mx-2">+</    Button>
-                        <Button  size="sm" onClick={() => cart.removeOneFromCart(id)} className="mx-2">-</Button>
-                </Col>
-                <Button size="sm" onClick={() => cart.deleteFromCart(id)}>Remove</Button>
+            <Col>
+                <Button  size="sm" onClick={() => cart.addOneToCart(id)} className="mx-2">+</    Button>
+                <Button  size="sm" onClick={() => cart.removeOneFromCart(id)} className="mx-2">-</Button>
+            </Col>
+            <Col><Button size="sm" onClick={() => cart.deleteFromCart(id)}>Remove</Button></Col>
             <hr></hr>
-        </>
+        </div>
     )
 }
 
