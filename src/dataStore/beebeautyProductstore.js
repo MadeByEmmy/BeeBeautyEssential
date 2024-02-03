@@ -2,14 +2,14 @@
 const beebeautyProductstore = [
     {
         id: "1",
-        title: "Whipped butter with tumeric soap",
         image: require('../assets/whipped_ butter_ with_tumeric_soap.jpg'),
+        title: "Whipped butter with tumeric soap",
         price: 3000
     },
     {
         id: "2",
-        title: "African black soap with lavender and honey",
         image: require('../assets/African_black_soap_lavender_honey.jpg'),
+        title: "African black soap with lavender and honey",
         price: 3000
     },
     {

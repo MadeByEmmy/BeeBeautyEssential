@@ -1,9 +1,9 @@
-import { Button, Col } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 import { CartContext } from "../CartContext";
 import { useContext } from "react";
 import { getProductData } from "../dataStore/beebeautyProductstore";
 
-import "./CartProduct.css"
+import "./CartProduct.css";
 
 function CartProduct(props) {
     const cart = useContext(CartContext);
@@ -17,13 +17,14 @@ function CartProduct(props) {
         <div className="emma">
             <img src={productData.image} alt="productimage" />
             <h3>{productData.title}</h3>
-            <p>{quantity} quantities * ₦{productData.price} </p>
+            
+            <p> ₦{productData.price}</p>
+            
+            <Button  size="sm" onClick={() => cart.addOneToCart(id)} className="button mx-2">+</Button>
+            <p>{quantity}</p>
+            <Button  size="sm" onClick={() => cart.removeOneFromCart(id)} className="button mx-2">-</Button>            
+            <Button className="button" size="button sm" onClick={() => cart.deleteFromCart(id)}>Remove</Button>
             <p>₦{ (quantity * productData.price.toFixed(2)) } </p>
-            <Col>
-                <Button  size="sm" onClick={() => cart.addOneToCart(id)} className="mx-2">+</    Button>
-                <Button  size="sm" onClick={() => cart.removeOneFromCart(id)} className="mx-2">-</Button>
-            </Col>
-            <Col><Button size="sm" onClick={() => cart.deleteFromCart(id)}>Remove</Button></Col>
             <hr></hr>
         </div>
     )

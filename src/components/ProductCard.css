@@ -1,0 +1,18 @@
+.button:hover,
+.button:focus {
+    background-color: #c2f5cc;
+    border: 1px solid #c2f5cc;
+    color: black;
+}
+
+.emma {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.form {
+    margin: auto;
+}
+
+
+

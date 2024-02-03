@@ -1,7 +1,30 @@
 .emma {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 .emma img {
     width: 100px;
+}
+
+h3 {
+    font-size: 18px
+}
+
+.emma img, h3, p, Button {
+    margin: 30px 0;
+}
+
+.button {
+    background-color: white;
+    color: black;
+    margin: auto;
+}
+
+.button:hover,
+.button:focus {
+    background-color: #c2f5cc;
+    border: 1px solid #c2f5cc;
 }
