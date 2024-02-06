@@ -88,9 +88,10 @@ function Navbar() {
                                     Purchase Items
                                 </Button>
                             </>
-                        :
+                        :   
                             <h1>There are no items in your Cart</h1>
                         }
+                       
                 </Modal.Body>
             </Modal>
         </IconContext.Provider>
