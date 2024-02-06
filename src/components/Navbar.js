@@ -87,7 +87,6 @@ function Navbar() {
                                 <Button variant='success' className='purchasebutton'>
                                     Purchase Items
                                 </Button>
-                                <Link to="/Beebeauties"><h1>Continue</h1></Link>
                             </>
                         :   
                             <h1>There are no items in your Cart</h1>
