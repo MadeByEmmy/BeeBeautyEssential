@@ -70,7 +70,7 @@ function Navbar() {
                     <Button onClick={handleShow} className='cart'><FaShoppingCart className='cart-icon' style={style}/><p className='total-numbers-cart'>{productsCount}</p></Button>
                 </div>
             </nav>
-            <Modal show={show} onHide={handleClose} size='lg' > 
+            <Modal show={show} onHide={handleClose} size='lg' className='modalbody' > 
                 <Modal.Header closeButton>
                     <Modal.Title>Shopping Cart</Modal.Title>
                 </Modal.Header>
@@ -82,11 +82,12 @@ function Navbar() {
                                     <CartProduct key={index} id={currentProduct.id} quantity={currentProduct.quantity} ></CartProduct>
                                 ))}
 
-                                <h1>Total: {cart.getTotalCost().toFixed(2)}</h1>
+                                <h1 className='total'>Total: ₦ {cart.getTotalCost().toFixed(2)}</h1>
                                 
-                                <Button variant='success'>
+                                <Button variant='success' className='purchasebutton'>
                                     Purchase Items
                                 </Button>
+                                <Link to="/Beebeauties"><h1>Continue</h1></Link>
                             </>
                         :   
                             <h1>There are no items in your Cart</h1>
