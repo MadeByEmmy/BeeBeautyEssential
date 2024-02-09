@@ -10,13 +10,11 @@
     justify-content: space-evenly;
 }
 
-.form {
-    margin: auto;
-}
 
-.button:active {
-    outline: #c2f5cc;
-}
 
+.button {
+    color: black;
+    margin: 0 10px;
+}
 
 

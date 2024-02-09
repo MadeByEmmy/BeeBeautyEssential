@@ -31,9 +31,9 @@ function ProductCard(props) { // props.product is the product we are selling
               <>
                   <Form as={Col} className='form'>
                       <Col className='col' sm="6">
-                        <Button  sm="6" onClick={() => cart.addOneToCart(product.id)} className="button mx-2">+</Button>
+                        <Button  sm="6" onClick={() => cart.addOneToCart(product.id)} className="button mx-3">+</Button>
                         <Form.Label column="true" sm="6">Item: {productQuantity}</Form.Label>
-                        <Button  sm="6" onClick={() => cart.removeOneFromCart(product.id)} className="button mx-2" >-</Button>
+                        <Button  sm="6" onClick={() => cart.removeOneFromCart(product.id)} className="button mx-3" >-</Button>
                       </Col>
                   </Form>
                   <Button variant='danger' onClick={() => cart.deleteFromCart(product.id)} className='my-2'>Remove from cart</Button>
