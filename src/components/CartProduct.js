@@ -14,16 +14,18 @@ function CartProduct(props) {
     const productData = getProductData(id);
 
     return (
-        <div className="emma">
+        <div className="cartproduct">
             <img src={productData.image} alt="productimage" />
             <h3>{productData.title}</h3>
             
             
-            <div className="emmaone">
-            <p> ₦{productData.price}</p>
-                <Button  size="sm" onClick={() => cart.addOneToCart(id)} className="button mx-2">+</Button>
-                <p>{quantity}</p>
-                <Button  size="sm" onClick={() => cart.removeOneFromCart(id)} className="button mx-2">-</Button>
+            <div className="cartprodnav">
+                <p>₦{productData.price}</p>
+                <div className="cartcontrol">
+                    <Button  size="sm" onClick={() => cart.addOneToCart(id)} className="button mx-3">+</Button>
+                    <p>{quantity}</p>
+                    <Button  size="sm" onClick={() => cart.removeOneFromCart(id)} className="button mx-3">-</Button>
+                </div>
             </div>
             <Button className="button" size="button sm" onClick={() => cart.deleteFromCart(id)}>Remove</Button>
             <p>₦{ (quantity * productData.price) } </p>
