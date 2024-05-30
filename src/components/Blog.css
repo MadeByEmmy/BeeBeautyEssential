@@ -5,7 +5,7 @@
 
 .blog img {
     width: 600px;
-    margin: 0 250px; /*I will change this*/
+    margin: 0 250px; /*I will change */
 }
 
 @media (max-width: 767px) {
